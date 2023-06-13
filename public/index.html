@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body class="bg-success">
+    <h1 class="text-center bg-secondary-subtle p-3 m-3">QUIZ APP</h1>
+    <div class="container">
+        <div class="p-3 bg-secondary shadow rounded">
+        <h3 class="text-dark text-bold">Ques No: <span id="currentQuestionNumber"> 1</span> / <span
+        id="totalQuestionNumber"> 10</span></h3>
+        <h2 id="question" class="py-2 m-3">HTML stands for __________________________________</h2>
+        </div>
+        <div id="optionParent" class="row">
+            <div class="col-md-4">
+                <div class="py-2">
+                <button class="btn btn-dark fs-4 rounded-pill w-100">
+                  Option 1
+                </button>
+                </div>
+            </div> 
+        <div class="col-md-4">
+        <div class="py-2">
+            <button class="btn btn-dark fs-4 rounded-pill w-100">
+              Option 2
+            </button>
+        </div>
+        </div>
+        <div class="col-md-4">
+            <div class="py-2">
+            <button class="btn btn-dark fs-4 rounded-pill w-100">
+              Option 3
+            </button>
+        </div>
+        </div>
+        <div class="col-md-4">
+            <div class="py-2">
+            <button class="btn btn-dark fs-4 rounded-pill w-100">
+              Option 4
+            </button>
+            </div>
+        </div>
+    </div> 
+    <div class="p-3 text-center">
+        <button onclick="nextQuestion()" class="bg-warning btn-outline-warning text-dark ">NEXT</button>
+    </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
